@@ -28,11 +28,9 @@ public class Main {
         colors.add("green");
         colors.add("white");
 
-        Iterator<String> iterator = colors.iterator();
-        System.out.println("\nThe iterator values"
-                + " of list are: ");
-        while (iterator.hasNext()) {
-            System.out.print(iterator.next() + " ");
+        colors.add(0, "color");
+        for (int i = 0; i < colors.size(); i++) {
+            System.out.println(colors.get(i));
         }
     }
 }
